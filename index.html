@@ -5,7 +5,36 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <style>body { margin: 0px; }</style>
-<style>.rootContainer {min-height: 100vh; max-height: 100vh; overflow: hidden;}</style>
+<style>
+            /* WebKit Browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            // background: rgba(0,255,0,1);
+            background: rgba(0,0,0,0);
+            width: 5px;
+            margin: 5px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Firefox */
+        * {
+            scrollbar-color: #888 #ffffff; /* Thumb and Track */
+            scrollbar-width: thin; /* auto, thin, none */
+        }
+    </style>
+<link rel="stylesheet" href="/asi-frontend-demo/umi.css">
 </head>
 <body>
 <div id="root" class="rootContainer"></div>
